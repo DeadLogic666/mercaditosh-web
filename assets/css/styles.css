@@ -97,3 +97,32 @@ footer{
     text-align:center;
     padding:20px;
 }
+
+/* Sección Flexbox */
+
+.flexbox-demo{
+    margin-top:50px;
+    text-align:center;
+}
+
+/* CONTENEDOR FLEX */
+
+.flex-container{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:30px;
+}
+
+/* ITEMS FLEX */
+
+.flex-item{
+    background:white;
+    width:220px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+}
