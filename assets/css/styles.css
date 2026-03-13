@@ -1,128 +1,96 @@
-/* Fuente general (HERENCIA) */
 body{
-    font-family: "Poppins", sans-serif;
-    margin:0;
-    background-color:#f4f4f4;
-    color:#333;
+font-family:"Poppins", sans-serif;
+margin:0;
+background:#f4f4f4;
+color:#333;
 }
 
-/* Header */
 header{
-    background:#6c3bd1;
-    color:white;
-    text-align:center;
-    padding:40px;
+background:#6c3bd1;
+color:white;
+text-align:center;
+padding:40px;
 }
 
-/* Navbar */
 nav{
-    background:#222;
+background:#222;
 }
 
 nav ul{
-    list-style:none;
-    margin:0;
-    padding:0;
-    display:flex;
-    justify-content:center;
+list-style:none;
+margin:0;
+padding:0;
+display:flex;
+justify-content:center;
 }
 
 nav li{
-    margin:10px;
+margin:10px;
 }
 
 nav a{
-    color:white;
-    text-decoration:none;
-    font-weight:500;
+color:white;
+text-decoration:none;
 }
 
-nav a:hover{
-    color:#6c3bd1;
-}
-
-/* Sección principal */
 main{
-    width:80%;
-    margin:auto;
-    margin-top:40px;
+width:80%;
+margin:auto;
+margin-top:40px;
 }
 
-/* Info */
-.info{
-    margin-bottom:40px;
-}
-
-/* Palabra resaltada */
 .resaltado{
-    color:#6c3bd1;
-    font-weight:600;
+color:#6c3bd1;
+font-weight:600;
 }
 
-/* Contenedor de tarjetas */
-.contenedor{
-    display:flex;
-    gap:20px;
-    justify-content:center;
+/* MODULOS FLEX */
+
+.flex-modulos{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+margin-top:30px;
 }
 
-/* Tarjetas */
-.tarjeta{
-    background:white;
-    padding:20px;
-    border-radius:10px;
-    width:250px;
-    text-align:center;
-    box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+.modulo{
+background:white;
+padding:20px;
+width:220px;
+border-radius:10px;
+box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+text-align:center;
 }
 
-.tarjeta h3{
-    font-family:"Roboto", sans-serif;
+/* ALINEACION FLEXBOX */
+
+.flex-alineacion{
+display:flex;
+justify-content:space-evenly;
+align-items:center;
+flex-wrap:wrap;
+gap:15px;
+background:#eaeaea;
+padding:30px;
+margin-top:30px;
 }
 
-.tarjeta a{
-    color:#6c3bd1;
-    text-decoration:none;
+.item{
+background:#6c3bd1;
+color:white;
+padding:15px 20px;
+border-radius:8px;
 }
 
-.tarjeta a:hover{
-    text-decoration:underline;
+.destacado{
+background:#ff6b6b;
 }
 
-/* Footer */
 footer{
-    margin-top:40px;
-    background:#222;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-/* Sección Flexbox */
-
-.flexbox-demo{
-    margin-top:50px;
-    text-align:center;
-}
-
-/* CONTENEDOR FLEX */
-
-.flex-container{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    gap:20px;
-    margin-top:30px;
-}
-
-/* ITEMS FLEX */
-
-.flex-item{
-    background:white;
-    width:220px;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0px 4px 10px rgba(0,0,0,0.15);
+margin-top:40px;
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
 }

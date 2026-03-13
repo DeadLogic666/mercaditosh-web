@@ -9,116 +9,105 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Mercaditosh</h1>
-        <p>Sistema de Gestión de Mercados Públicos de la CDMX</p>
-    </header>
+<header>
+    <h1>Mercaditosh</h1>
+    <p>Sistema de Gestión de Mercados Públicos de la Ciudad de México</p>
+</header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Mercados</a></li>
-            <li><a href="#">Locatarios</a></li>
-            <li><a href="#">Inspecciones</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+<nav>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Mercados</a></li>
+        <li><a href="#">Locales</a></li>
+        <li><a href="#">Locatarios</a></li>
+        <li><a href="#">Inspecciones</a></li>
+    </ul>
+</nav>
 
-    <main>
-     <section class="flexbox-demo">
+<main>
 
-        <h2>Módulos del Sistema</h2>
+<section class="info">
+<h2>Sobre el Sistema</h2>
 
-        <div class="flex-container">
+<p>
+Mercaditosh es un sistema diseñado para digitalizar la administración de
+<span class="resaltado">mercados públicos de la CDMX</span>.
+Permite gestionar información de mercados, locales, locatarios,
+productos, pagos e inspecciones sanitarias.
+</p>
 
-        <div class="flex-item">
-            <h3>Mercados</h3>
-            <p>Administración de mercados públicos.</p>
-        </div>
-
-        <div class="flex-item">
-            <h3>Locales</h3>
-            <p>Control de locales dentro del mercado.</p>
-        </div>
-
-        <div class="flex-item">
-            <h3>Locatarios</h3>
-            <p>Registro de comerciantes.</p>
-        </div>
-
-        <div class="flex-item">
-            <h3>Pagos</h3>
-            <p>Gestión de pagos de renta.</p>
-        </div>
-
-        <div class="flex-item">
-            <h3>Inspecciones</h3>
-            <p>Control de inspecciones sanitarias.</p>
-        </div>
-
-    </div>
+<p>
+Este proyecto forma parte del curso
+<span class="resaltado">Tecnologías para el Desarrollo de Aplicaciones Web</span>
+en ESCOM - IPN.
+</p>
 
 </section>
-        <section class="info">
-            <h2>Sobre el Sistema</h2>
-
-            <p>
-                El sistema <span class="resaltado">Mercaditosh</span> tiene como objetivo
-                digitalizar la administración de mercados públicos de la Ciudad de México,
-                permitiendo gestionar información sobre mercados, locales, locatarios,
-                productos, pagos e inspecciones sanitarias.
-            </p>
-
-            <p>
-                Este proyecto forma parte de la materia
-                <span class="resaltado">Tecnologías para el Desarrollo de Aplicaciones Web</span>
-                en ESCOM - IPN.
-            </p>
-
-        </section>
 
 
-        <section class="contenedor">
+<section class="modulos">
+<h2>Módulos del Sistema</h2>
 
-            <div class="tarjeta">
-                <h3>Mercados</h3>
-                <p>
-                    Registro y administración de mercados públicos dentro de la CDMX.
-                </p>
-                <a href="#">Leer más</a>
-            </div>
+<div class="flex-modulos">
 
-            <div class="tarjeta">
-                <h3>Locales</h3>
-                <p>
-                    Gestión de locales comerciales dentro de cada mercado.
-                </p>
-                <a href="#">Leer más</a>
-            </div>
+<div class="modulo">
+<h3>Mercados</h3>
+<p>Registro y control de mercados públicos dentro de la ciudad.</p>
+</div>
 
-            <div class="tarjeta">
-                <h3>Inspecciones</h3>
-                <p>
-                    Control de inspecciones sanitarias y administrativas.
-                </p>
-                <a href="#">Leer más</a>
-            </div>
+<div class="modulo">
+<h3>Locales</h3>
+<p>Administración de locales comerciales dentro de cada mercado.</p>
+</div>
 
-        </section>
+<div class="modulo">
+<h3>Locatarios</h3>
+<p>Registro de comerciantes y control de ocupación de locales.</p>
+</div>
 
-    </main>
+<div class="modulo">
+<h3>Pagos</h3>
+<p>Seguimiento de pagos de renta realizados por los locatarios.</p>
+</div>
 
-    <footer>
-        <p>Proyecto Mercaditosh diseñado por Job Rivas</p>
-    </footer>
+<div class="modulo">
+<h3>Inspecciones</h3>
+<p>Registro de inspecciones sanitarias y administrativas.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="alineacion-flex">
+<h2>Alineación con Flexbox</h2>
+
+<div class="flex-alineacion">
+
+<div class="item">Mercado</div>
+<div class="item">Local</div>
+<div class="item destacado">Locatario</div>
+<div class="item">Producto</div>
+<div class="item">Pago</div>
+<div class="item">Inspección</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<p>Proyecto Mercaditosh | ESCOM - IPN</p>
+</footer>
 
 </body>
 </html>
