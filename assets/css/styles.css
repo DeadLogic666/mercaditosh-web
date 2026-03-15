@@ -186,3 +186,26 @@ right:15px;
 }
 
 }
+
+.header{
+background:#6c3bd1;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+.logo-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:15px;
+}
+
+.logo-container img{
+height:50px;
+}
+
+.subtitle{
+font-size:14px;
+opacity:0.9;
+}
