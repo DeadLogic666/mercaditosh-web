@@ -8,66 +8,102 @@
 
 <title>Mercaditosh</title>
 
-<!-- Google Fonts -->
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-<!-- CSS -->
-
 <link rel="stylesheet" href="assets/css/styles.css">
 
 </head>
+
 
 <body>
 
 <header class="header">
 
-<img src="assets/logo.png" alt="Mercaditosh Logo" class="logo-principal">
+<div class="header-container">
 
-<p class="subtitle">
-Sistema de Gestión de Mercados Públicos de la CDMX
-</p>
+<img src="assets/logo.png"
+class="logo-principal"
+onclick="mostrarVista('inicio')">
+
+<div class="separador"></div>
+
+<div class="header-texto">
+
+<p>Sistema de Gestión de Mercados Públicos de la CDMX</p>
+
+</div>
+
+</div>
 
 </header>
 
 <nav class="navbar">
-  <ul>
-    <li><a href="#">Inicio</a></li>
-    <li><a href="#">Mercados</a></li>
-    <li><a href="#">Locales</a></li>
-    <li><a href="#">Locatarios</a></li>
-    <li><a href="#">Pagos</a></li>
-    <li><a href="#">Inspecciones</a></li>
-  </ul>
+
+<ul>
+
+<li><a onclick="mostrarVista('inicio')">Inicio</a></li>
+<li><a onclick="mostrarVista('modulos')">Módulos</a></li>
+<li><a onclick="mostrarVista('mercados')">Mercados</a></li>
+<li><a onclick="mostrarVista('locales')">Locales</a></li>
+<li><a onclick="mostrarVista('locatarios')">Locatarios</a></li>
+<li><a onclick="mostrarVista('pagos')">Pagos</a></li>
+<li><a onclick="mostrarVista('inspecciones')">Inspecciones</a></li>
+
+</ul>
+
 </nav>
 
 
 <main>
 
-<section class="info">
+<section id="inicio" class="vista">
 
 <h2>Administración de Mercados Públicos</h2>
 
 <p>
 El sistema <span class="resaltado">Mercaditosh</span> permite administrar
-información sobre mercados públicos en la Ciudad de México,
-incluyendo gestión de mercados, locales comerciales, locatarios,
-productos, pagos de renta e inspecciones sanitarias.
+mercados, locales comerciales, locatarios, productos, pagos de renta
+e inspecciones sanitarias dentro de los mercados públicos de la Ciudad de México.
 </p>
 
-<p>
-Este proyecto forma parte de la materia
-<span class="resaltado">Tecnologías para el Desarrollo de Aplicaciones Web</span>
-en ESCOM - IPN.
-</p>
+
+<div class="dashboard">
+
+<h2>Estadísticas del Sistema</h2>
+
+<div class="dashboard-grid">
+
+<div class="dashboard-card">
+<h3>300+</h3>
+<p>Mercados registrados</p>
+</div>
+
+<div class="dashboard-card">
+<h3>1200+</h3>
+<p>Locales comerciales</p>
+</div>
+
+<div class="dashboard-card">
+<h3>850+</h3>
+<p>Locatarios activos</p>
+</div>
+
+<div class="dashboard-card">
+<h3>95%</h3>
+<p>Inspecciones aprobadas</p>
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-<section class="modulos">
+<section id="modulos" class="vista">
 
 <h2>Módulos del Sistema</h2>
 
@@ -102,65 +138,64 @@ en ESCOM - IPN.
 </div>
 
 </section>
-<section class="dashboard">
 
-  <h2>Panel de Control del Sistema</h2>
 
-  <div class="dashboard-grid">
-
-    <div class="dashboard-card">
-      <h3>300+</h3>
-      <p>Mercados registrados</p>
-    </div>
-
-    <div class="dashboard-card">
-      <h3>1200+</h3>
-      <p>Locales comerciales</p>
-    </div>
-
-    <div class="dashboard-card">
-      <h3>850+</h3>
-      <p>Locatarios activos</p>
-    </div>
-
-    <div class="dashboard-card">
-      <h3>95%</h3>
-      <p>Inspecciones aprobadas</p>
-    </div>
-
-  </div>
-
+<section id="mercados" class="vista" style="display:none">
+<h2>Mercados Registrados</h2>
+<div id="tablaMercados"></div>
 </section>
 
-<section class="responsive">
 
-<h2>Plataforma Web Responsive</h2>
-
-<p>
-La plataforma Mercaditosh está diseñada para adaptarse a
-diferentes dispositivos gracias al uso de
-<span class="resaltado">Media Queries y Flexbox</span>.
-Esto permite que el sistema pueda utilizarse en computadoras,
-tablets y teléfonos móviles sin perder funcionalidad.
-</p>
-
+<section id="locales" class="vista" style="display:none">
+<h2>Locales</h2>
+<div id="tablaLocales"></div>
 </section>
 
+
+<section id="locatarios" class="vista" style="display:none">
+<h2>Locatarios</h2>
+<div id="tablaLocatarios"></div>
+</section>
+
+
+<section id="pagos" class="vista" style="display:none">
+<h2>Pagos</h2>
+<div id="tablaPagos"></div>
+</section>
+
+
+<section id="inspecciones" class="vista" style="display:none">
+<h2>Inspecciones</h2>
+<div id="tablaInspecciones"></div>
+</section>
 
 </main>
 
 
-<footer>
+<footer class="footer">
 
-  <p>Proyecto Mercaditosh | ESCOM - Instituto Politécnico Nacional</p>
-  <p>Tecnologías para el Desarrollo de Aplicaciones Web</p>
+<div class="footer-contenido">
+
+<p class="footer-logo">Mercaditosh</p>
+
+<p>
+Sistema de Gestión de Mercados Públicos de la CDMX
+</p>
+
+<p class="copyright">
+© 2026 Mercaditosh. Todos los derechos reservados.
+</p>
+<p>Designed by xDeadLogic666 </p>
+
+</div>
 
 </footer>
 
-<a href="#" class="btn-arriba">
-↑
-</a>
 
+<a href="#" class="btn-arriba">↑</a>
+
+<script src="assets/app.js"></script>
 
 </body>
+
 </html>
