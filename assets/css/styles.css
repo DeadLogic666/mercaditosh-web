@@ -1,12 +1,28 @@
-/* ================= */
+/* ================================================= */
+/* VARIABLES DE COLOR (PALETA DEL SISTEMA) */
+/* ================================================= */
+
+:root{
+--color-primario:#6c3bd1;
+--color-primario-claro:#8a5cf6;
+--color-acento:#e63946;
+--color-oscuro:#1f1f1f;
+--color-fondo:#f4f4f4;
+--color-texto:#333;
+--color-blanco:#ffffff;
+--sombra:0 4px 12px rgba(108, 26, 185, 0.833);
+}
+
+
+/* ================================================= */
 /* ESTILOS GENERALES */
-/* ================= */
+/* ================================================= */
 
 body{
-font-family:"Poppins", sans-serif;
+font-family:"Poppins",sans-serif;
 margin:0;
-background:#f4f4f4;
-color:#333;
+background:var(--color-fondo);
+color:var(--color-texto);
 }
 
 main{
@@ -16,19 +32,19 @@ margin-top:40px;
 }
 
 .resaltado{
-color:#6c3bd1;
+color:var(--color-primario);
 font-weight:600;
 }
 
 
-/* ================= */
+/* ================================================= */
 /* HEADER */
-/* ================= */
+/* ================================================= */
 
 .header{
-background:linear-gradient(135deg,#6c3bd1,#8a5cf6);
+background:linear-gradient(135deg,var(--color-primario),var(--color-primario-claro));
 padding:20px 0;
-color:white;
+color:var(--color-blanco);
 box-shadow:0 3px 10px rgba(0,0,0,0.15);
 }
 
@@ -44,41 +60,38 @@ gap:25px;
 .logo-principal{
 height:55px;
 cursor:pointer;
-transition:transform 0.2s ease;
+transition:transform .2s ease;
 }
 
 .logo-principal:hover{
 transform:scale(1.05);
 }
 
-/* LINEA SEPARADORA */
-
 .separador{
 width:2px;
 height:40px;
-background:white;
-opacity:0.8;
+background:var(--color-blanco);
+opacity:.8;
 }
-
-/* TEXTO */
 
 .header-texto p{
 margin:0;
 font-size:16px;
-font-weight:400;
-letter-spacing:0.5px;
-opacity:0.95;
+letter-spacing:.5px;
+opacity:.95;
 }
-/* ================= */
+
+
+/* ================================================= */
 /* NAVBAR */
-/* ================= */
+/* ================================================= */
 
 .navbar{
-background:#1f1f1f;
+background:var(--color-oscuro);
 position:sticky;
 top:0;
 z-index:1000;
-box-shadow:0px 2px 8px rgba(0,0,0,0.15);
+box-shadow:0 2px 8px rgba(0,0,0,0.15);
 }
 
 .navbar ul{
@@ -95,51 +108,48 @@ padding:15px 0;
 }
 
 .navbar a{
-color:white;
+color:var(--color-blanco);
 text-decoration:none;
 font-weight:500;
-transition:color 0.2s ease;
+transition:color .2s;
 }
 
 .navbar a:hover{
-color:#8a5cf6;
+color:var(--color-primario-claro);
 }
 
 
-/* ================= */
+/* ================================================= */
 /* GRID MODULOS */
-/* ================= */
+/* ================================================= */
 
 .grid-modulos{
 display:grid;
-grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:25px;
 margin-top:30px;
 }
 
 .modulo{
-background:white;
+background:var(--color-blanco);
 padding:25px;
 border-radius:12px;
-box-shadow:0px 4px 12px rgba(0,0,0,0.12);
+box-shadow:var(--sombra);
 text-align:center;
 position:relative;
-transition:transform 0.2s ease, box-shadow 0.2s ease;
+transition:transform .2s, box-shadow .2s;
 }
 
 .modulo:hover{
 transform:translateY(-6px);
-box-shadow:0px 8px 20px rgba(0,0,0,0.15);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
-
-
-/* BADGE */
 
 .badge{
 position:absolute;
 top:-10px;
 right:-10px;
-background:#ff4d4d;
+background:var(--color-acento);
 color:white;
 font-size:12px;
 padding:6px 10px;
@@ -147,9 +157,9 @@ border-radius:6px;
 }
 
 
-/* ================= */
-/* DASHBOARD GRID */
-/* ================= */
+/* ================================================= */
+/* DASHBOARD */
+/* ================================================= */
 
 .dashboard{
 margin-top:60px;
@@ -158,29 +168,29 @@ text-align:center;
 
 .dashboard-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
 gap:25px;
 margin-top:30px;
 }
 
 .dashboard-card{
-background:white;
+background:var(--color-blanco);
 padding:30px;
 border-radius:12px;
-box-shadow:0px 4px 12px rgba(0,0,0,0.12);
-transition:transform 0.2s ease, box-shadow 0.2s ease;
+box-shadow:var(--sombra);
+transition:transform .2s, box-shadow .2s;
 }
 
 .dashboard-card:hover{
 transform:translateY(-6px);
-box-shadow:0px 8px 20px rgba(0,0,0,0.15);
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
 }
 
 .dashboard-card h3{
 font-size:32px;
-color:#6c3bd1;
+color:var(--color-primario);
 margin:0;
-font-family:"Roboto", sans-serif;
+font-family:"Roboto",sans-serif;
 }
 
 .dashboard-card p{
@@ -190,22 +200,58 @@ color:#555;
 }
 
 
-/* ================= */
-/* BOTON FLOTANTE */
-/* ================= */
+/* ================================================= */
+/* TABLAS DEL SISTEMA */
+/* ================================================= */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:20px;
+background:var(--color-blanco);
+border-radius:10px;
+overflow:hidden;
+box-shadow:var(--sombra);
+}
+
+th{
+background:var(--color-primario);
+color:white;
+padding:12px;
+text-align:left;
+font-weight:600;
+}
+
+td{
+padding:12px;
+border-bottom:1px solid #eee;
+}
+
+tr:hover{
+background:#f7f7f7;
+}
+
+tr:last-child td{
+border-bottom:none;
+}
+
+
+/* ================================================= */
+/* BOTON SCROLL ARRIBA */
+/* ================================================= */
 
 .btn-arriba{
 position:fixed;
 bottom:20px;
 right:20px;
-background:#6c3bd1;
+background:var(--color-primario);
 color:white;
 padding:12px 15px;
 border-radius:50%;
 text-decoration:none;
 font-size:20px;
-box-shadow:0px 4px 10px rgba(0,0,0,0.3);
-transition:transform 0.2s ease;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+transition:transform .2s;
 }
 
 .btn-arriba:hover{
@@ -213,12 +259,12 @@ transform:scale(1.1);
 }
 
 
-/* ================= */
-/* FOOTER*/
-/* ================= */
+/* ================================================= */
+/* FOOTER */
+/* ================================================= */
 
 .footer{
-background:#1f1f1f;
+background:var(--color-oscuro);
 color:white;
 text-align:center;
 padding:30px 20px;
@@ -226,7 +272,7 @@ margin-top:60px;
 }
 
 .footer-logo{
-font-family:"Roboto", sans-serif;
+font-family:"Roboto",sans-serif;
 font-size:22px;
 font-weight:700;
 margin-bottom:5px;
@@ -235,21 +281,33 @@ margin-bottom:5px;
 .footer p{
 margin:5px 0;
 font-size:14px;
-opacity:0.9;
+opacity:.9;
 }
 
 .copyright{
 margin-top:10px;
 font-size:13px;
-opacity:0.7;
+opacity:.7;
 }
 
-/* ========================= */
-/* MEDIA QUERIES RESPONSIVE */
-/* ========================= */
+
+/* ================================================= */
+/* MENU RESPONSIVO */
+/* ================================================= */
+
+.menu-toggle{
+display:none;
+font-size:28px;
+color:white;
+cursor:pointer;
+padding:10px;
+text-align:center;
+}
 
 
-/* TABLET */
+/* ================================================= */
+/* RESPONSIVE */
+/* ================================================= */
 
 @media (max-width:900px){
 
@@ -267,8 +325,6 @@ flex-wrap:wrap;
 
 }
 
-
-/* CELULAR */
 
 @media (max-width:600px){
 
@@ -289,54 +345,6 @@ display:none;
 .header-texto p{
 font-size:14px;
 }
-
-}
-
-/* ================= */
-/* TABLAS DEL SISTEMA */
-/* ================= */
-
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:20px;
-background:white;
-border-radius:10px;
-overflow:hidden;
-box-shadow:0px 4px 12px rgba(0,0,0,0.1);
-}
-
-th{
-background:#6c3bd1;
-color:white;
-padding:12px;
-text-align:left;
-font-weight:600;
-}
-
-td{
-padding:12px;
-border-bottom:1px solid #eee;
-}
-
-tr:hover{
-background:#f5f5f5;
-}
-
-tr:last-child td{
-border-bottom:none;
-}
-
-.menu-toggle{
-display:none;
-font-size:28px;
-color:white;
-cursor:pointer;
-padding:10px;
-text-align:center;
-}
-
-@media (max-width:600px){
 
 .menu-toggle{
 display:block;
